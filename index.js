@@ -5,7 +5,7 @@ const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 const weather_icon=document.querySelector(".weither-icon")
 async function checkWeather(city) {
-    const response = await fetch(`${apiUrl}&q=${city}&appid=${apikey}`);
+    const response = await fetch(`${apiUrl}&q=${city}&appid=${apikey}`)
     const data = await response.json();
    // console.log(data);
 
